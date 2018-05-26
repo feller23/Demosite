@@ -4,15 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <title>Demosite</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
     <body>
-
-        {{-- NAV SIDEBAR --}}
+        <div class="container">
+                 {{-- NAV SIDEBAR --}}
         @include('includes.sidebar')
 
          {{-- END OF NAV SIDEBAR --}}
@@ -21,7 +20,10 @@
         {{-- BODY CONTENT --}}
          @yield('content')
 
-       
+        </div>
 
+       
+       
+        <script src="{{asset('js/app.js')}}"></script>
     </body>
 </html>

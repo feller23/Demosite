@@ -8,7 +8,7 @@
         @section('content')
             <div class="content">
                 <div class="title m-b-md">
-                    <h4>Welcome to the contact page</h4>
+                    <h1>Welcome to the contact page</h1>
                 </div>
             </div>
         @endsection
