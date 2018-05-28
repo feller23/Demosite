@@ -12,14 +12,12 @@
     <body>
         <div class="container">
                  {{-- NAV SIDEBAR --}}
+
         @include('includes.sidebar')
-
          {{-- END OF NAV SIDEBAR --}}
-
 
         {{-- BODY CONTENT --}}
          @yield('content')
-
         </div>
 
        
