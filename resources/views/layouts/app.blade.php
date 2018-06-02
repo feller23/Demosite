@@ -10,18 +10,25 @@
         <!-- Fonts -->
     </head>
     <body>
-        <div class="container">
-                 {{-- NAV SIDEBAR --}}
 
-        @include('includes.sidebar')
+         {{-- NAV SIDEBAR --}}
+         @include('includes.sidebar')
          {{-- END OF NAV SIDEBAR --}}
 
-        {{-- BODY CONTENT --}}
-         @yield('content')
-        </div>
+        <div class="container">
 
+            @include('includes.messages')
+            {{-- BODY CONTENT --}}
+            @yield('content')
+
+            @include('layouts.displayimages')
+        </div>
+        
        
-       
+       <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
         <script src="{{asset('js/app.js')}}"></script>
     </body>
 </html>
