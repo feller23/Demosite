@@ -21,7 +21,6 @@
             {{-- BODY CONTENT --}}
             @yield('content')
 
-            @include('layouts.displayimages')
         </div>
         
        

@@ -10,8 +10,10 @@
                             <a href="#" class="btn btn-lg btn-success">Login</a>
                             <a href="#" class="btn btn-lg btn-primary">Register</a>
                         </p>
-                     </div>   
-                </div>         
+                         
+                     </div>  
+                </div> 
+                <p>    @include('layouts.displayimages')  </p>        
             </div>
         @endsection
         
