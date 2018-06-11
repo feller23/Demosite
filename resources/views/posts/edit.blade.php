@@ -15,10 +15,7 @@
                 {{form::hidden('_method','PUT')}}
                 {{form::submit('update',['class'=>'btn btn-md btn-default'])}}
     {!! Form::close() !!}
-                {!!form::open(['action'=>['PostsController@destroy',$post->id],'method'=>'POST'])!!}
-                   {{form::hidden('_method','DESTROY')}}
-                   {{form::submit('delete',['class'=>'btn btn-danger btn-md pull-right'])}} 
-                {!!form::close()!!}
+               
     @endsection
 
 
