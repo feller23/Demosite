@@ -6,15 +6,10 @@
             @if (count($postArray)> 0)
               <div class="list-group">
                     @foreach ($postArray as $post)
-                    <div class="row">
-                        <div class="list-group-item col-md-8">
+                        <div class="list-group-item">
                              <h4><a href="/posts/{{$post->id}}">{{$post->title}}</a></h5>
                              <small>created on {{$post->created_at}}</small>
                         </div>  
-                        <div class="col-md-4">
-                            <a href="/posts/{{$post->id}}/edit" class="btn btn-lg btn-success text-center">edit posts</a>
-                        </div>
-                    </div>
                     
                     @endforeach
                     <p>{{$postArray->links()}}</p>
